@@ -26,7 +26,7 @@
       <var-badge type="danger" :value="value1" :max-value="maxValue" />
     </var-space>
     <app-type>Different Positioning Badges</app-type>
-    <var-space class="example__position" direction="column" size="large">
+    <var-space direction="column" size="large" class="transform">
       <var-badge type="danger" position="right-top">
         <var-chip plain :round="false" color="#009688">The Upper Right</var-chip>
       </var-badge>
@@ -89,13 +89,7 @@ export default defineNuxtComponent({
 })
 </script>
 <style lang="less" scoped>
-.var-badge {
-  margin-right: 20px;
-  margin-bottom: 8px;
-}
-.example {
-  &__position {
-    margin-left: 10px;
-  }
+.transform {
+  padding-left: 12px;
 }
 </style>
