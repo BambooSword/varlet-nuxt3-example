@@ -26,22 +26,20 @@
       <var-badge type="danger" :value="value1" :max-value="maxValue" />
     </var-space>
     <app-type>Different Positioning Badges</app-type>
-    <div class="example__position">
-      <var-space direction="column" size="large">
-        <var-badge type="danger" position="right-top">
-          <var-chip plain :round="false" color="#009688">The Upper Right</var-chip>
-        </var-badge>
-        <var-badge type="danger" position="right-bottom">
-          <var-chip plain :round="false" color="#009688">The Lower Right</var-chip>
-        </var-badge>
-        <var-badge type="danger" position="left-top">
-          <var-chip plain :round="false" color="#009688">The Upper Left</var-chip>
-        </var-badge>
-        <var-badge type="danger" position="left-bottom">
-          <var-chip plain :round="false" color="#009688">The Lower Left</var-chip>
-        </var-badge>
-      </var-space>
-    </div>
+    <var-space class="example__position" direction="column" size="large">
+      <var-badge type="danger" position="right-top">
+        <var-chip plain :round="false" color="#009688">The Upper Right</var-chip>
+      </var-badge>
+      <var-badge type="danger" position="right-bottom">
+        <var-chip plain :round="false" color="#009688">The Lower Right</var-chip>
+      </var-badge>
+      <var-badge type="danger" position="left-top">
+        <var-chip plain :round="false" color="#009688">The Upper Left</var-chip>
+      </var-badge>
+      <var-badge type="danger" position="left-bottom">
+        <var-chip plain :round="false" color="#009688">The Lower Left</var-chip>
+      </var-badge>
+    </var-space>
 
     <app-type>Whether To Display The Badge</app-type>
     <var-space>
@@ -50,7 +48,7 @@
         <var-chip plain :round="false" color="#009688">Badge</var-chip>
       </var-badge>
     </var-space>
-		
+
     <app-type>Custom Badge Colors</app-type>
     <var-badge color="#6200ea" position="right-top">
       <var-chip plain :round="false" color="#009688">Badge</var-chip>
